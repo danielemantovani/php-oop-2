@@ -1,12 +1,16 @@
 <?php
 
 require_once __DIR__ . "/models/product.php";
+require_once __DIR__ . "/models/category.php";
 
-$product1 = new Product("Ciotola", 25, "ciotola.png");
-$product2 = new Product("Fieno", 4,50, "fieno.png");
+$rabbitCategory = new Category("Rabbit");
+$rabbitCategory -> setIcon("fa-solid fa-dragon");
 
-var_dump($product1);
-var_dump($product2);
+$dogCategory = new Category("Dog");
+$dogCategory -> setIcon("fa-solid fa-paw");
+
+var_dump($rabbitCategory);
+var_dump($dogCategory);
 
 
 ?>
